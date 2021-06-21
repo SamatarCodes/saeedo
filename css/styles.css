@@ -1,2 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
 body {
-  background-color: lightblue; }
+  font-family: 'Aleo', sans-serif;
+  font-weight: normal;
+  line-height: 1.4;
+  overflow-x: hidden; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.navbar {
+  padding-top: 3rem;
+  display: flex; }
+  .navbar .navbar__logo {
+    background-color: #18191f;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 1rem 1.5rem; }
