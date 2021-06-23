@@ -1,12 +1,13 @@
 .header 
-    min-height: 100vh
+    height: 100vh
     display: flex
-    outline: 1px solid red
-    padding-left: 5%
+
+    
 
     
     .header__primary
         flex: 1
+        padding-left: 5%
         
         
         
@@ -24,9 +25,42 @@
                 opacity: .85
                 color: $gray-text-color
 
-               
+            
 
     .header__secondary 
         flex: 1
         background-color: $black-color
+        position: relative
 
+        .header__image--one,
+        .header__image--two,
+        .header__image--three,
+        .header__image--four,
+        .header__image--five,
+        .header__image--six
+            position: absolute
+        .header__image--one
+            width: 100px
+            top: 210px
+            left: 320px
+
+        .header__image--two 
+            width: 100px
+            top: 342px
+            left: -45px
+        .header__image--three 
+            top: 182px
+            left: -18px
+        .header__image--four
+            top: 600px
+            left: 110px
+        .header__image--five
+            top: 660px
+            left: 420px
+        .header__image--six
+            top: 552px
+            right: -5px
+
+@media (max-width:768px)
+    .header 
+        flex-direction: column
