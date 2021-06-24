@@ -62,13 +62,6 @@
             top: 552px
             right: -5px
 
-@media (max-width:768px)
-    .header 
-        flex-direction: column
-        .hero__title 
-            margin: 0
-
-
 
 @media (max-width: 1084px)
     .header
@@ -84,3 +77,31 @@
         .hero__text 
             width: 80%
 
+@media (max-width:768px)
+    .header 
+        flex-direction: column
+        .header__primary
+            padding-bottom: 9.1rem
+        .hero__title 
+            margin: 0
+
+        .header__secondary
+            .header__image--three,
+            .header__image--four,
+            .header__image--five,
+                top: 0
+                left: 0
+            .header__image--six,
+            .header__image--three,
+                display: none
+            .header__image--two
+                top: -32px
+                left: 214px
+                
+        
+            .header__image--four
+                top: 40px 
+                left: 90px
+            .header__image--five 
+                top: 161px 
+                left: 54px
