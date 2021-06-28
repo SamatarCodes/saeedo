@@ -2,12 +2,9 @@
     min-height: 100vh
     display: flex
 
-    
     .header__primary
         width: 45%
         margin-left: 5%
-        
-        
         
         .hero__content 
             max-width: 60rem
@@ -30,19 +27,25 @@
         background-color: $black-color
         position: relative
       
-
         .header__image--one,
         .header__image--two,
         .header__image--three,
         .header__image--four,
         .header__image--five,
-        .header__image--six
+        .header__image--six,
+        .header__image--dots
             position: absolute
         .header__image--one
-            width: 100px
+            width: 130px
             top: 210px
-            left: 320px
-
+            // left: 320px
+            right: 140px
+            z-index: 2
+        .header__image--dots 
+            top: 190px
+            right: 110px
+            z-index: 1
+            // left: 400px
         .header__image--two 
             width: 100px
             top: 342px
@@ -55,7 +58,6 @@
             left: 110px
         .header__image--five
             top: 660px
-            //left: 420px
             right: 50px
         .header__image--six
             top: 552px
@@ -69,7 +71,7 @@
         .header__secondary
             
             .header__image--one
-                right: 2%
+               // right: 2%
             .header__image--two
                 top: 30%
             .header__image--five
@@ -90,14 +92,18 @@
         .header__secondary
             width: 100%
             outline: 1px solid green
-            min-height: 30rem
+            min-height: 35rem
 
             .header__image--six,
             .header__image--three,
                 display: none
             .header__image--one
                 top: 121px
-                left: 60%
+                left: 55%
+            .header__image--dots 
+                top: 110px
+                left: 65%
+
             .header__image--two
                 top: -32px
                 left: 50%
@@ -110,6 +116,15 @@
                 top: 161px 
                 left: 10%
 
+@media (max-width: 414px)
+    .header
+        .header__secondary
+            .header__image--one 
+                top: 121px
+                left: 55%
+            .header__image--dots 
+                top: 110px
+                left: 70%
 .section2 
     margin-top: 15rem
     height: 50vh
