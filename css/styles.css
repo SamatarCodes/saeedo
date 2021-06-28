@@ -74,9 +74,11 @@ a {
       .header .header__primary .hero__content .hero__text {
         font-size: 1.8rem;
         margin-top: 2rem;
-        font-weight: 400;
+        font-weight: 500;
         opacity: .85;
         color: #7e8495; }
+      .header .header__primary .hero__content .hero--saeedo {
+        color: #8c30f5; }
   .header .header__secondary {
     width: 50%;
     background-color: #18191f;
