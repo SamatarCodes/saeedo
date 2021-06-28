@@ -126,27 +126,22 @@ a {
     .header .header__secondary {
       width: 100%;
       outline: 1px solid green;
-      min-height: 35rem; }
-      .header .header__secondary .header__image--three,
-      .header .header__secondary .header__image--four,
-      .header .header__secondary .header__image--five {
-        top: 0;
-        left: 0; }
+      min-height: 30rem; }
       .header .header__secondary .header__image--six,
       .header .header__secondary .header__image--three {
         display: none; }
       .header .header__secondary .header__image--one {
         top: 121px;
-        right: 69px; }
+        left: 60%; }
       .header .header__secondary .header__image--two {
         top: -32px;
-        left: 214px; }
+        left: 50%; }
       .header .header__secondary .header__image--four {
         top: 40px;
-        left: 90px; }
+        left: 20%; }
       .header .header__secondary .header__image--five {
         top: 161px;
-        left: 54px; } }
+        left: 10%; } }
 
 .section2 {
   margin-top: 15rem;
