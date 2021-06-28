@@ -37,7 +37,7 @@ a {
   display: flex; }
   .navbar .navbar__logo {
     background-color: #18191f;
-    color: #ffffff;
+    color: #fff;
     font-size: 2rem;
     padding: 1rem 1.5rem; }
 
@@ -54,11 +54,11 @@ a {
     background-color: #7209b7; }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   display: flex; }
   .header .header__primary {
-    flex: 1;
-    padding-left: 5%; }
+    width: 45%;
+    margin-left: 5%; }
     .header .header__primary .hero__content {
       max-width: 60rem;
       margin-top: 20rem; }
@@ -72,7 +72,7 @@ a {
         opacity: .85;
         color: #7e8495; }
   .header .header__secondary {
-    flex: 1;
+    width: 50%;
     background-color: #18191f;
     position: relative; }
     .header .header__secondary .header__image--one,
@@ -119,23 +119,35 @@ a {
   .header {
     flex-direction: column; }
     .header .header__primary {
-      padding-bottom: 9.1rem; }
+      margin-bottom: 9.1rem;
+      width: 90%; }
     .header .hero__title {
       margin: 0; }
-    .header .header__secondary .header__image--three,
-    .header .header__secondary .header__image--four,
-    .header .header__secondary .header__image--five {
-      top: 0;
-      left: 0; }
-    .header .header__secondary .header__image--six,
-    .header .header__secondary .header__image--three {
-      display: none; }
-    .header .header__secondary .header__image--two {
-      top: -32px;
-      left: 214px; }
-    .header .header__secondary .header__image--four {
-      top: 40px;
-      left: 90px; }
-    .header .header__secondary .header__image--five {
-      top: 161px;
-      left: 54px; } }
+    .header .header__secondary {
+      width: 100%;
+      outline: 1px solid green;
+      min-height: 35rem; }
+      .header .header__secondary .header__image--three,
+      .header .header__secondary .header__image--four,
+      .header .header__secondary .header__image--five {
+        top: 0;
+        left: 0; }
+      .header .header__secondary .header__image--six,
+      .header .header__secondary .header__image--three {
+        display: none; }
+      .header .header__secondary .header__image--one {
+        top: 121px;
+        right: 69px; }
+      .header .header__secondary .header__image--two {
+        top: -32px;
+        left: 214px; }
+      .header .header__secondary .header__image--four {
+        top: 40px;
+        left: 90px; }
+      .header .header__secondary .header__image--five {
+        top: 161px;
+        left: 54px; } }
+
+.section2 {
+  margin-top: 15rem;
+  height: 50vh; }

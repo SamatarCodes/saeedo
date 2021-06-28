@@ -1,13 +1,11 @@
 .header 
-    height: 100vh
+    min-height: 100vh
     display: flex
 
     
-
-    
     .header__primary
-        flex: 1
-        padding-left: 5%
+        width: 45%
+        margin-left: 5%
         
         
         
@@ -28,9 +26,10 @@
             
 
     .header__secondary 
-        flex: 1
+        width: 50%
         background-color: $black-color
         position: relative
+      
 
         .header__image--one,
         .header__image--two,
@@ -68,6 +67,7 @@
         .hero__title
             margin-right: 10%
         .header__secondary
+            
             .header__image--one
                 right: 2%
             .header__image--two
@@ -81,11 +81,18 @@
     .header 
         flex-direction: column
         .header__primary
-            padding-bottom: 9.1rem
+           margin-bottom: 9.1rem
+           width: 90%
+
         .hero__title 
             margin: 0
 
         .header__secondary
+            width: 100%
+            outline: 1px solid green
+            min-height: 35rem
+
+       
             .header__image--three,
             .header__image--four,
             .header__image--five,
@@ -94,6 +101,9 @@
             .header__image--six,
             .header__image--three,
                 display: none
+            .header__image--one
+                top: 121px
+                right: 69px
             .header__image--two
                 top: -32px
                 left: 214px
@@ -105,3 +115,7 @@
             .header__image--five 
                 top: 161px 
                 left: 54px
+
+.section2 
+    margin-top: 15rem
+    height: 50vh
