@@ -1,6 +1,7 @@
 .header 
     min-height: 100vh
     display: flex
+    
 
     .header__primary
         width: 45%
@@ -17,13 +18,13 @@
                 .hero__accent 
                     position: absolute
                     top: 20px
-                    left: 5px
+                    left: 8px
             .hero__text
                 font-size: 1.8rem
                 margin-top: 2rem
                 font-weight: 500
                 opacity: .85
-                color: $gray-text-color
+                color: $gray-color
 
             .hero--saeedo
                 color: $main-bg-color
@@ -89,6 +90,7 @@
 
 @media (max-width:768px)
     .header 
+        min-height: 90vh
         flex-direction: column
         .header__primary
            margin-bottom: 9.1rem
@@ -133,7 +135,4 @@
             .header__image--dots 
                 top: 110px
                 left: 70%
-TODO              
-.section2 
-    margin-top: 15rem
-    height: 50vh
+

@@ -1,0 +1,67 @@
+.container
+    width: 90%
+    max-width: 140rem
+    margin: 15rem auto
+    justify-content:space-between
+    background-color: $section_grey-color
+    
+               
+.hire__team__container
+    display: flex
+    justify-content: space-between
+    padding: 10rem 
+
+
+    .hire__content__container
+        //padding: 15rem 15rem
+        width: 50%
+       
+
+        .hire__title 
+            font-size: clamp(2rem, 2.2vw, 2.7rem)
+            font-size: clamp(2.5rem, 3.0vw, 3.3rem)
+            font-weight: 600
+            max-width: 50rem
+            margin-top: 5rem
+            
+        .hire__text 
+            font-size: 1.5rem
+            font-weight: 400
+            max-width: 35rem
+            margin-top: 2rem
+            margin-bottom: 5rem
+            line-height: 25px
+
+    .hire__container__image 
+        width: 45%
+        //padding: 15rem 10rem 0 0
+        
+        .hire__image 
+           
+            margin-left: auto
+
+
+@media (max-width: 768px)
+    .container 
+        width: 100%
+        margin: 0
+   
+    .hire__team__container 
+        flex-direction: column
+        .hire__content__container,
+        .hire__container__image
+            width: 100%
+
+            .hire__image 
+                margin: 0 auto
+            .hire__title,
+            .hire__text
+                max-width: 100%
+                text-align: center
+                //outline: 1px solid red    
+    // .hire__container__image 
+    //     display: flex
+    
+    //     .hire__image 
+    //         align-self: center
+            //outline: 1px solid green
