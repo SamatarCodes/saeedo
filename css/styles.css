@@ -178,9 +178,12 @@ a {
 
 .container {
   width: 90%;
-  max-width: 140rem;
-  margin: 15rem auto;
-  background-color: #F5f7fA; }
+  max-width: 140rem; }
+
+.team {
+  background-color: #F5f7fA;
+  margin: 0 auto;
+  margin-top: 15rem; }
 
 .hire__team__container {
   display: flex;
@@ -244,3 +247,35 @@ a {
         font-size: 2rem; }
       .container .hire__team__container .hire__content__container .hire__text {
         max-width: 100%; } }
+
+.work__info {
+  margin: 5rem auto;
+  max-width: 100rem; }
+
+.projects__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  opacity: .85;
+  color: #7e8495;
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center; }
+  .projects__title .projects__title--saeedo {
+    color: #18191f;
+    font-weight: 600; }
+
+.projects__data__section {
+  display: flex;
+  justify-content: space-between; }
+
+.projects__data {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5rem; }
+  .projects__data .projects__data--image {
+    width: 6.6rem; }
+  .projects__data .projects__data__clients {
+    display: flex;
+    flex-direction: column; }
+    .projects__data .projects__data__clients .projects__clients--numbers {
+      font-size: 3rem; }
