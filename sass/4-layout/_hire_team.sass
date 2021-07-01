@@ -20,6 +20,7 @@
         .hire__title 
             font-size: clamp(2rem, 2.2vw, 2.7rem)
             font-size: clamp(2.5rem, 3.0vw, 3.3rem)
+            font-size: clamp(2.5rem, 3.0vw, 3.3rem)
             font-weight: 600
             max-width: 50rem
             margin-top: 5rem
@@ -34,34 +35,48 @@
 
     .hire__container__image 
         width: 45%
-        //padding: 15rem 10rem 0 0
         
         .hire__image 
            
             margin-left: auto
 
 
-@media (max-width: 768px)
+@media (max-width: 963px)
     .container 
         width: 100%
         margin: 0
    
-    .hire__team__container 
-        flex-direction: column
-        .hire__content__container,
-        .hire__container__image
-            width: 100%
+        .hire__team__container 
+            flex-direction: column
+            .hire__content__container,
+            .hire__container__image
+                width: 100%
+                
+                .hire__image 
+                 margin: 0 auto
 
-            .hire__image 
-                margin: 0 auto
-            .hire__title,
+                .hire__title,
+                .hire__text
+                    max-width: 100%
+                    text-align: center
+                .hire__text 
+                    max-width: 80%
+                    margin: 2rem auto
+
+            .hire__content__container 
+                margin-bottom: 6rem
+
+@media (max-width: 616px)
+    .container .hire__team__container 
+        padding: 2rem
+
+        .hire__content__container 
+            max-width: 100%
+            
+            .hire__title, 
             .hire__text
+                text-align: left
+            .hire__title 
+                font-size: 2rem
+            .hire__text 
                 max-width: 100%
-                text-align: center
-                //outline: 1px solid red    
-    // .hire__container__image 
-    //     display: flex
-    
-    //     .hire__image 
-    //         align-self: center
-            //outline: 1px solid green

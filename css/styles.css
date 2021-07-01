@@ -136,7 +136,7 @@ a {
   .header .hero__text {
     width: 80%; } }
 
-@media (max-width: 768px) {
+@media (max-width: 963px) {
   .header {
     min-height: 90vh;
     flex-direction: column; }
@@ -191,6 +191,7 @@ a {
     .hire__team__container .hire__content__container .hire__title {
       font-size: clamp(2rem, 2.2vw, 2.7rem);
       font-size: clamp(2.5rem, 3vw, 3.3rem);
+      font-size: clamp(2.5rem, 3vw, 3.3rem);
       font-weight: 600;
       max-width: 50rem;
       margin-top: 5rem; }
@@ -206,21 +207,40 @@ a {
     .hire__team__container .hire__container__image .hire__image {
       margin-left: auto; }
 
-@media (max-width: 768px) {
+@media (max-width: 963px) {
   .container {
     width: 100%;
     margin: 0; }
-  .hire__team__container {
-    flex-direction: column; }
-    .hire__team__container .hire__content__container,
-    .hire__team__container .hire__container__image {
-      width: 100%; }
-      .hire__team__container .hire__content__container .hire__image,
-      .hire__team__container .hire__container__image .hire__image {
-        margin: 0 auto; }
-      .hire__team__container .hire__content__container .hire__title,
-      .hire__team__container .hire__content__container .hire__text,
-      .hire__team__container .hire__container__image .hire__title,
-      .hire__team__container .hire__container__image .hire__text {
-        max-width: 100%;
-        text-align: center; } }
+    .container .hire__team__container {
+      flex-direction: column; }
+      .container .hire__team__container .hire__content__container,
+      .container .hire__team__container .hire__container__image {
+        width: 100%; }
+        .container .hire__team__container .hire__content__container .hire__image,
+        .container .hire__team__container .hire__container__image .hire__image {
+          margin: 0 auto; }
+        .container .hire__team__container .hire__content__container .hire__title,
+        .container .hire__team__container .hire__content__container .hire__text,
+        .container .hire__team__container .hire__container__image .hire__title,
+        .container .hire__team__container .hire__container__image .hire__text {
+          max-width: 100%;
+          text-align: center; }
+        .container .hire__team__container .hire__content__container .hire__text,
+        .container .hire__team__container .hire__container__image .hire__text {
+          max-width: 80%;
+          margin: 2rem auto; }
+      .container .hire__team__container .hire__content__container {
+        margin-bottom: 6rem; } }
+
+@media (max-width: 616px) {
+  .container .hire__team__container {
+    padding: 2rem; }
+    .container .hire__team__container .hire__content__container {
+      max-width: 100%; }
+      .container .hire__team__container .hire__content__container .hire__title,
+      .container .hire__team__container .hire__content__container .hire__text {
+        text-align: left; }
+      .container .hire__team__container .hire__content__container .hire__title {
+        font-size: 2rem; }
+      .container .hire__team__container .hire__content__container .hire__text {
+        max-width: 100%; } }
