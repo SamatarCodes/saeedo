@@ -266,12 +266,14 @@ a {
 
 .projects__data__section {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5rem; }
 
 .projects__data {
   display: flex;
   align-items: flex-start;
-  margin-top: 5rem; }
+  width: 20%; }
   .projects__data .projects__data--image {
     width: 6.6rem; }
   .projects__data .projects__data__clients {
@@ -279,3 +281,6 @@ a {
     flex-direction: column; }
     .projects__data .projects__data__clients .projects__clients--numbers {
       font-size: 3rem; }
+    .projects__data .projects__data__clients .projects__clients--text {
+      font-size: 1.3rem;
+      color: #7e8495; }
