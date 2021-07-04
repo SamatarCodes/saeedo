@@ -178,11 +178,11 @@ a {
 
 .container {
   width: 90%;
-  max-width: 140rem; }
+  max-width: 140rem;
+  margin: 0 auto; }
 
 .team {
   background-color: #F5f7fA;
-  margin: 0 auto;
   margin-top: 15rem; }
 
 .hire__team__container {
@@ -192,8 +192,6 @@ a {
   .hire__team__container .hire__content__container {
     width: 50%; }
     .hire__team__container .hire__content__container .hire__title {
-      font-size: clamp(2rem, 2.2vw, 2.7rem);
-      font-size: clamp(2.5rem, 3vw, 3.3rem);
       font-size: clamp(2.5rem, 3vw, 3.3rem);
       font-weight: 600;
       max-width: 50rem;
@@ -249,7 +247,7 @@ a {
         max-width: 100%; } }
 
 .work__info {
-  margin: 5rem auto;
+  margin: 10rem auto;
   max-width: 100rem; }
 
 .projects__title {
@@ -290,7 +288,8 @@ a {
     margin: 5rem auto;
     width: 80%; }
   .projects__data {
-    width: 40%; } }
+    width: 40%;
+    padding-bottom: 1rem; } }
 
 @media (max-width: 500px) {
   .projects__data__section {
@@ -300,3 +299,13 @@ a {
   .projects__title {
     text-align: left;
     padding: 0 2rem 0; } }
+
+.services {
+  background-color: #18191f;
+  padding: 10rem 0; }
+  .services .services__list {
+    display: flex; }
+  .services .services__title {
+    color: #fff; }
+  .services .services__list__content {
+    background-color: #fff; }
