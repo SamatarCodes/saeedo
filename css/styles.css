@@ -303,9 +303,34 @@ a {
 .services {
   background-color: #18191f;
   padding: 10rem 0; }
-  .services .services__list {
-    display: flex; }
   .services .services__title {
     color: #fff; }
+  .services .services__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin: 4rem auto; }
+    .services .services__list .services__list--image {
+      width: 3rem; }
   .services .services__list__content {
-    background-color: #fff; }
+    border-radius: 2%;
+    background-color: #fff;
+    width: 23%;
+    padding: 3rem 3rem; }
+    .services .services__list__content .services__list--title {
+      font-size: 1.5rem;
+      padding: 1rem 0; }
+    .services .services__list__content .services__list--text {
+      font-size: 1.2rem; }
+
+@media (max-width: 768px) {
+  .services .services__list__content {
+    margin-bottom: 2rem; } }
+
+@media (max-width: 580px) {
+  .services .services__list {
+    flex-direction: column;
+    align-items: center; }
+  .services .services__list__content {
+    width: 80%; } }
