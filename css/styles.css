@@ -62,6 +62,15 @@ a {
   .hire--button:hover {
     background-color: #c4c4c4; }
 
+.hero__content--precision {
+  position: relative; }
+  .hero__content--precision .hero__accent {
+    position: absolute;
+    top: 20px;
+    left: 8px; }
+  .hero__content--precision .hero__accent--location {
+    top: 10px; }
+
 .header {
   min-height: 100vh;
   display: flex; }
@@ -74,12 +83,6 @@ a {
       .header .header__primary .hero__content .hero__title {
         font-size: clamp(2.8rem, 2.6vw, 4rem);
         font-weight: 600; }
-      .header .header__primary .hero__content .hero__content--precision {
-        position: relative; }
-        .header .header__primary .hero__content .hero__content--precision .hero__accent {
-          position: absolute;
-          top: 20px;
-          left: 8px; }
       .header .header__primary .hero__content .hero__text {
         font-size: 1.8rem;
         margin-top: 2rem;
@@ -339,11 +342,20 @@ a {
   background-image: url(../images/location_section/pattern.png);
   background-color: #8c30f5; }
   .location .location__content {
-    width: 40rem;
+    max-width: 75rem;
     padding: 10rem 0;
-    margin-left: 10rem; }
+    margin: 0 auto; }
     .location .location__content .location__content--title {
+      max-width: 40rem;
       color: #fff;
       font-size: 2.2rem;
       font-weight: 500;
-      margin-bottom: 2rem; }
+      margin-bottom: 3rem; }
+
+@media (max-width: 768px) {
+  .location .location__content {
+    margin-left: 5rem; } }
+
+@media (max-width: 580px) {
+  .location .location__content {
+    margin-left: 2rem; } }
