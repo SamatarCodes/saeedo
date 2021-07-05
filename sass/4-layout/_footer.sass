@@ -1,0 +1,35 @@
+.footer 
+    background-color: $black-color 
+    color: $gray-color
+    font-size: 1.2rem
+    padding: 5rem 0
+    
+    
+
+    .nav 
+        display: flex
+        justify-content: space-between
+        
+        .navbar2 
+            width: 25rem
+            margin-bottom: 2rem
+.navbar__list 
+    display: flex
+    justify-content: space-between
+
+.navbar__list--link,
+.footer__contact
+    transition:  450ms ease,opacity .2s ease;
+    &:hover
+        color: $white-bg-color
+
+@media (max-width: 964px)
+    .footer 
+        padding: 5rem 
+@media (max-width: 550px) 
+    .footer 
+        .nav 
+            flex-direction: column
+     
+        .right__side 
+            margin-top: 1rem
