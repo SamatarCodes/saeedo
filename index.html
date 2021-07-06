@@ -9,6 +9,7 @@
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="icon" href="images/icons/favicon1.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <title>SAEEDO</title>
@@ -21,16 +22,18 @@
         <header class="header">
             <!-- inside header, we need 2 containers -->
             <!-- container 1 -->
-            <div class="header__primary">
+            <div class="header__primary" id="home">
                 <nav class="navbar">
                     <p class="navbar__logo">SAEEDO</p>
                 </nav>
                 <div class="hero__content">
-                    <h1 class="hero__title">Your Vision and Words deserve a home. We're here to build it with
+                    <h1 data-aos="fade" data-aos-delay="500" data-aos-easing="ease-in-sine" class="hero__title">Your
+                        Vision and Words deserve a home. We're here to build
+                        it with
                         <span class="hero__content--precision">precision
                             <img class="hero__accent" src="/images/Accent.png" alt="image of accent">
                         </span></h1>
-                    <p class="hero__text">We are <span class="hero--saeedo">Saeedo.</span> A Digital Software Company.
+                    <p class="hero__text">We are <span class="hero--saeedo">Saeedo.</span> <span id="animate"></span>
                     </p>
                     <button class="hero--button"><a href="mailto:info@saeedo.com">info@saeedo.com</a></button>
                 </div>
@@ -50,7 +53,7 @@
             </div>
         </header>
         <!-- 2nd section -->
-        <section class="container team">
+        <section class="container team" id="about">
             <div class="hire__team__container">
                 <!-- 1 left section -->
                 <div class="hire__content__container">
@@ -65,7 +68,7 @@
                 </div>
                 <!-- 2 right section -->
                 <div class="hire__container__image">
-                    <img class="hire__image" src="/images/hire_image.png" alt="work data">
+                    <img class="hire__image" src="/images/hire_image2.png" alt="work data">
                 </div>
             </div>
         </section>
@@ -115,7 +118,7 @@
         </section>
         <!-- 4th Section -->
         <section class="services">
-            <h2 class="projects__title services__title">
+            <h2 class="projects__title services__title" id="services">
                 Services that create custom <br> digital experiences
             </h2>
             <!-- main container -->
@@ -167,15 +170,15 @@
             </div>
         </section>
         <!-- footer -->
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="nav container">
                 <div class="left__side">
                     <div class="navbar2">
                         <ul class="navbar__list">
-                            <li><a class="navbar__list--link" href="#">Home</a></li>
-                            <li><a a class="navbar__list--link" href="#">About</a></li>
-                            <li><a a class="navbar__list--link" href="#">Services</a></li>
-                            <li><a a class="navbar__list--link" href="#">Contact</a></li>
+                            <li><a class="navbar__list--link" href="#home">Home</a></li>
+                            <li><a a class="navbar__list--link" href="#about">About</a></li>
+                            <li><a a class="navbar__list--link" href="#services">Services</a></li>
+                            <li><a a class="navbar__list--link" href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <p>&copy 2021 SAEEDO. All rights reserved</p>
@@ -186,6 +189,11 @@
             </div>
         </footer>
     </main>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
