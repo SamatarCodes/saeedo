@@ -20,6 +20,7 @@
                 font-weight: 500
                 opacity: .85
                 color: $gray-color
+             
 
             .hero--saeedo
                 color: $main-bg-color
@@ -42,14 +43,12 @@
         .header__image--one
             width: 130px
             top: 210px
-            // left: 320px
             right: 140px
             z-index: 2
         .header__image--dots 
             top: 190px
             right: 110px
             z-index: 1
-            // left: 400px
         .header__image--two 
             width: 100px
             top: 342px
@@ -72,10 +71,16 @@
     .header
         .hero__title
             margin-right: 10%
+        .hero__content
+        position: relative
+        .hero__text 
+            position: absolute
+
+        .hero--button 
+            margin-top: 9rem
         .header__secondary
             
-            .header__image--one
-               // right: 2%
+            
             .header__image--two
                 top: 30%
             .header__image--five
@@ -96,7 +101,6 @@
 
         .header__secondary
             width: 100%
-            outline: 1px solid green
             min-height: 35rem
 
             .header__image--six,
@@ -121,6 +125,12 @@
                 top: 161px 
                 left: 10%
 
+@media (max-width: 537px)
+    .hero__content 
+        .hero--button 
+            margin-top: 11rem
+
+        
 @media (max-width: 414px)
     .header
         .header__secondary
