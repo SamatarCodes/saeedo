@@ -52,3 +52,8 @@ window.onload = function () {
     halfgreen.style.transform = 'translateY(' + (pageY * -1) / 10 + '%)';
   });
 };
+
+var footerYear = document.getElementById('footer-year');
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
